@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.musicalnotes.MainActivity">
+
+    <Button
+        android:id="@+id/Do"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="85dp"
+        android:cornerRadius="16dp"
+        android:onClick="playSound"
+        android:text="DO"
+        android:textSize="32sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Re"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="playSound"
+        android:text="RE"
+        android:textSize="32sp"
+        android:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Ni"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:onClick="playSound"
+        android:text="NI"
+        android:textSize="32sp"
+        android:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Do" />
+
+    <Button
+        android:id="@+id/Fa"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="playSound"
+        android:text="FA"
+        android:textSize="32sp"
+        android:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Re" />
+
+    <Button
+        android:id="@+id/So"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:onClick="playSound"
+        android:text="SO"
+        android:textSize="32sp"
+        android:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ni" />
+
+    <Button
+        android:id="@+id/La"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="playSound"
+        android:text="LA"
+        android:textSize="32sp"
+        android:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fa" />
+
+    <Button
+        android:id="@+id/Ti"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="90dp"
+        android:cornerRadius="16dp"
+        android:onClick="playSound"
+        android:text="TI"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/So" />
+
+    <Button
+        android:id="@+id/Do8"
+        android:layout_width="183dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="playSound"
+        android:text="DO"
+        android:textSize="32sp"
+        android:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/La" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Musical Notes"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
